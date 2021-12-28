@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.BMIAnalysis.NewRecord">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="BMI Analyzer"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="New Record"
+        android:textColor="@color/purple_500"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:text="Weight"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/minWei"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16sp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:onClick="minWei"
+            android:paddingBottom="4dp"
+            android:text="-"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="50"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/maxWei"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:onClick="maxWei"
+            android:text="+"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="kg"
+            android:textColor="@color/purple_500" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:text="Length"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/minLength"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16sp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:onClick="minLength"
+            android:paddingBottom="4dp"
+            android:text="-"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/length"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="120"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/maxLength"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_gravity="center"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:onClick="maxLength"
+            android:text="+"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="cm"
+            android:textColor="@color/purple_500" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:text="Date"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="34dp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="12sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20dp"
+            android:text="Time"
+            android:textColor="@color/purple_500"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="145dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/backgrond_conter"
+            android:gravity="center"
+            android:textColor="@color/purple_500"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_saveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20sp"
+    android:onClick="save"
+        android:background="@drawable/bg_et"
+        android:text="Save Data"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="16sp" />
+</LinearLayout>
